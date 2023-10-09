@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@esbuild/darwin-x64':
+    specifier: 0.18.20
+    version: 0.18.20
   astro:
     specifier: ^3.2.3
     version: 3.2.3
@@ -379,7 +382,6 @@ packages:
     os: [darwin]
     requiresBuild: true
     dev: false
-    optional: true
 
   /@esbuild/darwin-x64@0.19.4:
     resolution: {integrity: sha512-YHbSFlLgDwglFn0lAO3Zsdrife9jcQXQhgRp77YiTDja23FrC2uwnhXMNkAucthsf+Psr7sTwYEryxz6FPAVqw==}
