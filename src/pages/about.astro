@@ -1,71 +1,27 @@
 ---
-import '../styles/global.css';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "About Me";
-
-const identity = {
-  firstName: "Sarah",
-  country: "Canada",
-  occupation: "Technical Writer",
-  hobbies: ["photography", "birdwatching", "baseball"],
-};
-
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
-
-const happy = true;
-const finished = true;
-const goal = 3;
-
-const skillColor = "navy";
-const fontWeight = "bold";
-const textCase = "uppercase";
-
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <style define:vars={{ skillColor, fontWeight, textCase }} slot="head">
-    h1 {
-      color: purple;
-      font-size: 4rem;
-    }
-    .skill {
-      color: var(--skillColor);
-      font-weight: var(--skillColor);
-      text-transform: var(--textCase);
-    }
-  </style>
-
-  <h1>{pageTitle}</h1>
-  <p>Here are a few facts about me:</p>
-  <ul>
-    <li>My name is {identity.firstName}.</li>
-    <li>
-      I live in {identity.country} and I work as a {identity.occupation}.
-    </li>
-    {
-      identity.hobbies.length >= 2 && (
-        <li>
-          Two of my hobbies are: {identity.hobbies[0]} and{" "}
-          {identity.hobbies[1]}
-        </li>
-      )
-    }
-  </ul>
-  <p>My skills are:</p>
-  <ul>
-    {skills.map((skill) => <li class="skill">{skill}</li>)}
-  </ul>
-
-  {happy && <p>I am happy to be learning Astro!</p>}
-
-  {finished && <p>I finished this tutorial!</p>}
-
-  {
-    goal === 3 ? (
-      <p>My goal is to finish in 3 days.</p>
-    ) : (
-      <p>My goal is not 3 days.</p>
-    )
-  }
+  <div class="container">
+    <h1 class="text-3xl font-bold">Hi, my name is An.</h1>
+    <p>
+      I’m a self-taught developer with {new Date().getFullYear() - 2015} years
+      of experience in web development.
+    </p>
+    <p>
+      Currently, I work full-time as a full stack web developer, while also
+      engaging in building hobby projects and freelancing on the side.
+    </p>
+    <p>
+      I love acquiring new knowledge and exploring different ways to solve
+      problems.
+    </p>
+    <p>
+      In my leisure time, I play footballs and enjoy spending time in nature by
+      biking or trekking near the forest.
+    </p>
+  </div>
 </BaseLayout>

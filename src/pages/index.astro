@@ -1,11 +1,26 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Greeting from '../components/Greeting';
+import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Home Page";
-
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<h1>Welcome to An's Website!</h1>
-	<Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
+  <div class="container">
+    <h1 class="text-3xl font-bold">Hi, my name is An.</h1>
+    <p>
+      I’m a self-taught developer with {new Date().getFullYear() - 2015} years
+      of experience in web development.
+    </p>
+    <p>
+      Currently, I work full-time as a full stack web developer, while also
+      engaging in building hobby projects and freelancing on the side.
+    </p>
+    <p>
+      I love acquiring new knowledge and exploring different ways to solve
+      problems.
+    </p>
+    <p>
+      In my leisure time, I play footballs and enjoy spending time in nature by
+      biking or trekking near the forest.
+    </p>
+  </div>
 </BaseLayout>
