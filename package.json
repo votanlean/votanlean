@@ -10,8 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/preact": "^3.0.1",
     "@astrojs/rss": "^3.0.0",
     "@esbuild/darwin-x64": "0.18.20",
-    "astro": "^3.2.3"
+    "astro": "^3.2.3",
+    "preact": "^10.6.5"
   }
 }
