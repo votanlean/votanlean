@@ -8,10 +8,6 @@ I'm a Full Stack Javascript Developer
 - **Backend Development**: Node.js, NestJS, AWS Lambda
 - **DevOps & Cloud Technologies**: AWS, Docker, Nginx
 
-## 🌱 Recent Projects
-
-- **Open AI for Vietnamese**: Develop a Open AI proxy so that Vietnamese people can use OpenAI API without the struggles such as register account and payment
-
 ## 📫 How to Reach Me
 - Website: votanlean.com
 - Email: votanlean@gmail.com
