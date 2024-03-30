@@ -1,11 +1,11 @@
 # Hi there, I'm An Vo! 👋
 
-I'm a Full Stack Javascript Developer
+I'm a Software Engineer
 
 ## 🚀 My Skills
 
 - **Frontend Development**: React, Next.js
-- **Backend Development**: Node.js, NestJS, AWS Lambda
+- **Backend Development**: Node, Go
 - **DevOps & Cloud Technologies**: AWS, Docker, Nginx
 
 ## 📫 How to Reach Me
